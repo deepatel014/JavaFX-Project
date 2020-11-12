@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.Scene1Controller">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PDFtoWord.png" />
+         </image>
+      </ImageView>
+    
+      <Button layoutX="246.0" layoutY="454.0" mnemonicParsing="false" onAction="#browseButtnClicked" prefHeight="53.0" prefWidth="147.0" style="-fx-background-color: #ffffff; -fx-background-radius: 360;" text="Select File" textFill="#1e1d1d">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblString" layoutX="236.0" layoutY="540.0" prefHeight="18.0" prefWidth="345.0" />
+      <Label fx:id="filePath" layoutX="176.0" layoutY="540.0" text="File Path:" />
+      <Button layoutX="45.0" layoutY="56.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="53.0" prefWidth="147.0" style="-fx-background-color: #ffffff; -fx-background-radius: 360;" text="Back" textFill="#1e1d1d">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
